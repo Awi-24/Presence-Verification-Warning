@@ -1,22 +1,23 @@
-Online Drive Lessons Time-Saver
+<h1>Online Drive Lessons Time-Saver</h1>
 
 This code is designed to save time during online drive lessons in Brazil by warning the student when the random presence verification shows up during a class. The idea behind this code is to automate the process of watching for the verification box to appear, which saves the student from having to constantly keep an eye on the screen.
 
-Dependencies
+<h2>Dependencies</h2
 This code requires the following dependencies:
+<ul>
+<li>cv2: OpenCV is a computer vision library used for image and video processing. This library is used for capturing and manipulating screenshots.</li>
+<li>numpy: NumPy is a numerical computing library used for working with arrays. This library is used to manipulate arrays of pixel data.</li>
+<li>time: The time module provides various time-related functions. This library is used to add a delay between each iteration of the loop to avoid overwhelming system resources.</li>
+<li>winsound: The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. This library is used to emit an audible warning when the verification box appears.</li>
+<li>PIL: PIL (Python Imaging Library) is a library used for opening, manipulating, and saving many different image file formats. This library is used to capture screenshots.</li>
+</ul>
 
--cv2: OpenCV is a computer vision library used for image and video processing. This library is used for capturing and manipulating screenshots.
--numpy: NumPy is a numerical computing library used for working with arrays. This library is used to manipulate arrays of pixel data.
--time: The time module provides various time-related functions. This library is used to add a delay between each iteration of the loop to avoid overwhelming system resources.
--winsound: The winsound module provides access to the basic sound-playing machinery provided by Windows platforms. This library is used to emit an audible warning when the verification box appears.
--PIL: PIL (Python Imaging Library) is a library used for opening, manipulating, and saving many different image file formats. This library is used to capture screenshots.
-
-Usage
+<h2>Usage</h2>
 To use this code, the user must select a region of interest on their screen where the verification box appears during the online drive lesson. The code then continuously monitors this region for any changes and emits an audible warning if the verification box appears.
 
 To select the region of interest, the code opens a window titled "Selecionar Área". The user can then press the "s" key to start selecting the region of interest. Once the region has been selected, the code automatically starts monitoring that region.
 
-Explanation of the Code
+<h2>Explanation of the Code</h2>
 The code first creates a window titled "Selecionar Área" for the user to select the region of interest. It continuously captures screenshots of the screen and displays them in this window until the user presses the "s" key to start selecting the region.
 
 Once the region of interest has been selected, the code sets up a loop to continuously monitor that region. It captures screenshots of only the selected region and converts them to grayscale. It then calculates the difference between the current frame and the previous frame.
