@@ -1,4 +1,4 @@
-# Online Drive Lessons Time-Saver
+# Online Driving Lessons Time-Saver
 
 This code is designed to save time during online drive lessons in Brazil by warning the student when the random presence verification shows up during a class. The idea behind this code is to automate the process of watching for the verification box to appear, which saves the student from having to constantly keep an eye on the screen.
 
