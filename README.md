@@ -1,6 +1,6 @@
 # Online Driving Lessons Time-Saver
 
-This code is designed to save time during online drive lessons in Brazil by warning the student when the random presence verification shows up during a class. The idea behind this code is to automate the process of watching for the verification box to appear, which saves the student from having to constantly keep an eye on the screen.
+This code is designed to save time during online lessons by warning the student when the random presence verification shows up during a class. The idea behind this code is to automate the process of watching for the verification box to appear. Additionally, staring at a computer screen for long periods of time can also cause eye strain, discomfort, and the student may go to the bathroom or get something to eat during the class. Therefore, this code not only saves time but also helps to alleviate some of the physical discomfort associated with online learning, making it a more comfortable and efficient experience for the student.
 
 ## Dependencies
 This code requires the following dependencies:
@@ -24,3 +24,6 @@ Once the region of interest has been selected, the code sets up a loop to contin
 If the difference exceeds a certain threshold, the code converts the difference to black and white and applies a threshold to it. It then counts the number of white pixels in the image and compares it to a pre-defined threshold value. If the number of white pixels exceeds the threshold, the code emits an audible warning using the winsound library.
 
 The code then sets the current frame as the previous frame and waits for a second before capturing the next frame. This delay ensures that the code does not overwhelm system resources.
+
+## Future Work
+In the future, this code could be further improved to accommodate individuals with epilepsy. For instance, the code could be designed to warn individuals of potential triggers in videos or other media on their computer. This would be particularly useful for online lessons, where students are required to focus on visual stimuli for extended periods. By implementing such improvements, this code could become even more accessible and inclusive, catering to a broader range of individuals with different needs and conditions.
