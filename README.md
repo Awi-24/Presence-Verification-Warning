@@ -1,4 +1,4 @@
-# Online Driving Lessons Time-Saver
+# Online Lessons Time-Saver
 
 This code is designed to save time during online lessons by warning the student when the random presence verification shows up during a class. The idea behind this code is to automate the process of watching for the verification box to appear. Additionally, staring at a computer screen for long periods of time can also cause eye strain, discomfort, and the student may go to the bathroom or get something to eat during the class. Therefore, this code not only saves time but also helps to alleviate some of the physical discomfort associated with online learning, making it a more comfortable and efficient experience for the student.
 
@@ -12,7 +12,7 @@ This code requires the following dependencies:
 * PIL: PIL (Python Imaging Library) is a library used for opening, manipulating, and saving many different image file formats. This library is used to capture screenshots.
 
 ## Usage
-To use this code, the user must select a region of interest on their screen where the verification box appears during the online drive lesson. The code then continuously monitors this region for any changes and emits an audible warning if the verification box appears.
+To use this code, the user must select a region of interest on their screen where the verification box appears during the online lesson. The code then continuously monitors this region for any changes and emits an audible warning if the verification box appears.
 
 To select the region of interest, the code opens a window titled "Selecionar Área". The user can then press the "s" key to start selecting the region of interest. Once the region has been selected, the code automatically starts monitoring that region.
 
